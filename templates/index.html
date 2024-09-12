@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}My to 10 Movies{% endblock %}
+
+{% block content %}
+<div class="hero bg-dark text-secondary px-4 py-5 text-center">
+    <div class="hero-content py-5">
+        <h1 class="display-5 fw-bold text-white">Welcome to Your Movie Collection</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Start building your personal movie collection by adding your all-time favorite movies. Whether it's a timeless classic, an action-packed thriller, or a heartwarming drama, this is the place to showcase the films that have left a lasting impression on you. Share your top picks with others, explore new genres, and revisit old favorites. Create a collection that's uniquely yours, and let your love for cinema shine through every title you add!</p>
+            {% if not is_loggedin: %}
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="{{ url_for('register') }}" type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Get Started</a>
+                <a type="button" class="btn btn-outline-light btn-lg px-4">View Collection</a>
+            </div>
+            {% else: %}
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a type="button" class="btn btn-outline-light btn-lg px-4">View Collection</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
