@@ -16,6 +16,18 @@ import os
 API_KEY = os.environ.get('API_KEY')
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+Bootstrap5(app)
+
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return db.get_or_404(User, user_id)
+
 
 gravatar = Gravatar(app,
                     size=100,
@@ -26,13 +38,6 @@ gravatar = Gravatar(app,
                     use_ssl=False,
                     base_url=None)
 
-login_manager = LoginManager()
-login_manager.init_app(app)
-class Base(DeclarativeBase):
-    pass
-
-app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
-Bootstrap5(app)
 
 class Base(DeclarativeBase):
     pass
@@ -41,9 +46,6 @@ db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
 
-@login_manager.user_loader
-def load_user(user_id):
-    return db.get_or_404(User, user_id)
 
 class UserMovie(db.Model):
     __tablename__ = 'user_movies'
