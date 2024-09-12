@@ -6,6 +6,7 @@
 <h4 align="center">A beginner-friendly project built using Python Flask and Bootstrap to manage and display user profiles and favorite movies.</h4>
 
 <p align="center">
+  <a href="https://themoviessss.onrender.com/" target="_blank">Website Preview</a> •
   <a href="#technologies-used">Technologies Used</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
