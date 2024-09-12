@@ -88,22 +88,22 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [P
 
 ### Home Page
 
-<img width="1280" alt="Screenshot 2024-09-12 144220" src="https://github.com/user-attachments/assets/1d6d0ef8-e325-40aa-b7e0-4d987d597534">
+![Screenshot 2024-09-12 144218](https://github.com/user-attachments/assets/45dd0090-b9e0-46b8-9cfb-d265a54106bf)
 
 - **Description**: The home page displays an overview of the application with links to view user profiles and browse movies.
 
 ### User Profile Page
 
-![Screenshot 2024-09-12 145517](https://github.com/user-attachments/assets/b3ec9382-af2b-4b52-8be4-d962ed253359)
+![Screenshot 2024-09-12 145517](https://github.com/user-attachments/assets/5d6a21e6-87e8-417f-a580-69a672dab93d)
 
 - **Description**: This page shows the user's profile details, including their avatar, name, and list of favorite movies.
 
 ### Movie Listings Page
 
-![Screenshot 2024-09-12 145746](https://github.com/user-attachments/assets/fe6af6e2-2334-424b-9e38-718114b1fbe9)
+![Screenshot 2024-09-12 145746](https://github.com/user-attachments/assets/4b9faa63-977c-40bd-9420-81c88ee0491c)
 <br>
 <br>
-![Screenshot 2024-09-12 150345](https://github.com/user-attachments/assets/b40b6bbd-4be7-418b-85e0-d1ada10e2f05)
+![Screenshot 2024-09-12 150345](https://github.com/user-attachments/assets/451d84cf-5d12-4ded-a6ed-bc4e41996e44)
 
 - **Description**: Users can browse through a list of movies, view details, and see ratings.
 
