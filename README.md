@@ -3,7 +3,7 @@
   <br>
 </h1>
 
-<h4 align="center">A beginner-friendly project built using Python Flask and Bootstrap to manage and display user profiles and favorite movies.</h4>
+<h4 align="center">A beginner-friendly project built using Python Flask and Bootstrap to display favorite movies.</h4>
 
 <p align="center">
   <a href="#technologies-used">Technologies Used</a> •
